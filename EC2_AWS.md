@@ -7,6 +7,7 @@ You can bypass this step and login normally.<br>
 2. Go to Services > EC2<br>
 
 3. In "Create Instance" section, click on "Launch Instance"<br>
+
 [![isaac-arnault-AWS2.png](https://i.postimg.cc/nVSG28yg/isaac-arnault-AWS2.png)](https://postimg.cc/6TRZ6P5f)
 
 4. Select Amazon Linux 2 AMI (HVM), SSD Volume Type<br>
