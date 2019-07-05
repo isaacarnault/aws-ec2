@@ -5,19 +5,23 @@ You can bypass this step and login normally.<br>
 [![isaac-arnault-AWS-1.jpg](https://i.postimg.cc/L5F2KQwp/isaac-arnault-AWS-1.jpg)](https://postimg.cc/nj26q2nR)
 
 2. Go to Services > EC2<br>
-3. In "Create Instance" section, click on "Launch Instance"
+
+3. In "Create Instance" section, click on "Launch Instance"<br>
 [![isaac-arnault-AWS2.png](https://i.postimg.cc/nVSG28yg/isaac-arnault-AWS2.png)](https://postimg.cc/6TRZ6P5f)
 
 4. Select Amazon Linux 2 AMI (HVM), SSD Volume Type<br>
+
 5. Instance type: choose t2.micro (Free tier eligible). Instance comes with 1vCPU and 1 GiB (memory).<br>
+
 6. Click on "Next: Configure instance details"<br>
+
 7. Configure instance details : leave all fields as they're by default, just Enable termination protection.<br>
 [![isaac-arnault-AWS3.png](https://i.postimg.cc/Sx69wHPy/isaac-arnault-AWS3.png)](https://postimg.cc/mPrh9pRq)
 
 8. Click on "Next : Add Storage". Leave default configuration then click on Next: Add Tags. You can leave tags blanks, here I'm using some tags for my own needs.<br>
-[![isaac-arnault-AWS4.png](https://i.postimg.cc/TY8qFjPJ/isaac-arnault-AWS4.png)](https://postimg.cc/8sH6r6M7)
 
-9. Click on "Next : Configure Security Group". Click on "Add rule" to allow `Port 80` on `Http.` Ignore the warning and click on "Review and Launch" then "Launch".
+[![isaac-arnault-AWS4.png](https://i.postimg.cc/TY8qFjPJ/isaac-arnault-AWS4.png)](https://postimg.cc/8sH6r6M7)
+9. Click on "Next : Configure Security Group". Click on "Add rule" to allow `Port 80` on `Http.` Ignore the warning and click on "Review and Launch" then "Launch".<br>
 [![isaac-arnault-AWS-5.png](https://i.postimg.cc/0QwK037R/isaac-arnault-AWS-5.png)](https://postimg.cc/5YftxsPn)
 
 10. Now you are about to create a key pair to securely `SSH` into your instance. Select "Create a new key pair", name it as you want then "Download Key Pair". This should download a .pem file. Mine is MYKP1.pem.
@@ -25,7 +29,8 @@ You can bypass this step and login normally.<br>
 15. Change the permissions to .pem file, ie: $ chmod 400 MYKP1.pem.<br>
 16. Connect to your `EC2` instance using your `IPv4 Public IP Address` provided by your `EC2` instance: $ ssh ec2-user@myipv4.public.address -i MYKP1.pem. Then type "yes" when prompted by the `CLI`. See screenshot below if everything worked fine.<br>
 
-Now, you are connected to your `EC2` instance using `SSH`.<br>
+<div style="text-align: center">
+Now, you are connected to your `EC2` instance using `SSH`.</div>
 
 [![isaac-arnault-AWS-9.png](https://i.postimg.cc/SxvYw8LG/isaac-arnault-AWS-9.png)](https://postimg.cc/nXqLmXPs)
 <hr>
