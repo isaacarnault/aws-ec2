@@ -68,6 +68,7 @@ Now you should have 2 files, MYKP1.pem and MYKP1.pub. Rename "MYKP1.pem" to "MYK
 Go back in your "Secure App Shell" in your `Chrome` browser to upload the two generated files. Select the two files and import them. Then click "[ENTER] Connect".<br>
 
 There you go, if everything went fine you should be prompted by the Secure Shell App, type "yes" and you should see the same display as you would normally see in your CLI.
+[![isaac-arnault-AWS.png](https://i.postimg.cc/85xPkBX1/isaac-arnault-AWS.png)](https://postimg.cc/5YqMnvMG)
 
 <hr>
 
@@ -88,5 +89,5 @@ There you go, if everything went fine you should be prompted by the Secure Shell
 [![isaac-arnault-AWS-15.png](https://i.postimg.cc/k4NV6SxW/isaac-arnault-AWS-15.png)](https://postimg.cc/xJCjBcpd)
 
 There you go, type your IPv4 public address in your browser and you should see your web server online.<br>
+[![isaac-arnault-AWS-16.png](https://i.postimg.cc/8cSZMxjs/isaac-arnault-AWS-16.png)](https://postimg.cc/k6TNd1Nd)
 
-[![isaac-arnault-AWS.png](https://i.postimg.cc/85xPkBX1/isaac-arnault-AWS.png)](https://postimg.cc/5YqMnvMG)
