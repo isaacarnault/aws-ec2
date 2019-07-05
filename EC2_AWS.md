@@ -34,21 +34,23 @@ Now, you are connected to your `EC2` instance using `SSH`.<br>
 [![isaac-arnault-AWS-9.png](https://i.postimg.cc/SxvYw8LG/isaac-arnault-AWS-9.png)](https://postimg.cc/nXqLmXPs)
 <hr>
 <b>Important</b><br>
-<li>. If connection failed, you are probably blocked by a proxy (you are trying to connect from a Public Libraby for example) not allowing your device using `Port 22`, which is the default port used by the `SSH`.</li>
+<li>If connection failed, you are probably blocked by a proxy (you are trying to connect from a Public Libraby for example) not allowing your device using `Port 22`, which is the default port used by the `SSH`.</li>
 
-<li>. Now we are going to use another method if you want to connect to your `EC2` instance, if you can't / do not want to use your `CLI`. We are going to use `Secure Shell App` extension in our `Chrome` browser.</li>
+<li>Now we are going to use another method if you want to connect to your `EC2` instance, if you can't / do not want to use your `CLI`. We are going to use `Secure Shell App` extension in our `Chrome` browser.</li>
 
-<li>. Search for "Secure Shell App" in your Search Engine and Download it as below :</li>
+<li>Search for "Secure Shell App" in your Search Engine and Download it as below :</li>
 
 [![isaac-arnault-AWS-10.png](https://i.postimg.cc/3rp4VPVd/isaac-arnault-AWS-10.png)](https://postimg.cc/F1rHJn94)
 
-<li>. Once installed, you should have see this. Then click on "Secure Shell App" icon.</li>
+<li>Once installed, you should have see this. Then click on "Secure Shell App" icon.</li>
 
 [![isaac-arnault-AWS-11.png](https://i.postimg.cc/0QpfkZcv/isaac-arnault-AWS-11.png)](https://postimg.cc/FdHcGyMC)
 
-<li>. If everything goes well, enter the following (information) into your Secure Shall App: your username (ec2-user) and your hostname (provided by your EC2 instance). Regarding the "Identity section", you will be uploading your "MYKP1.pem" file as well as the same file without the .pem extension.<br>
-. Go in the SSH folder where you stored the .pem file from your CLI and generate a public key from the .pem, using : $ ssh-keygen -y -f MYKP1.pem > MYKP1.pub.<br>
-. Now you should have 2 files, MYKP1.pem and MYKP1.pub. Rename "MYKP1.pem" to "MYKP1" (remove .pem extension).
+<li>If everything goes well, enter the following (information) into your Secure Shall App: your username (ec2-user) and your hostname (provided by your EC2 instance). Regarding the "Identity section", you will be uploading your "MYKP1.pem" file as well as the same file without the .pem extension.</li>
+  
+<li>Go in the SSH folder where you stored the .pem file from your CLI and generate a public key from the .pem, using : $ ssh-keygen -y -f MYKP1.pem > MYKP1.pub.</li>
+
+<li>Now you should have 2 files, MYKP1.pem and MYKP1.pub. Rename "MYKP1.pem" to "MYKP1" (remove .pem extension).</li>
 
   [![isaac-arnault-AWS-12.png](https://i.postimg.cc/D0YMqShw/isaac-arnault-AWS-12.png)](https://postimg.cc/8fM4GPs2)
   
