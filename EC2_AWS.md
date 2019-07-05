@@ -163,19 +163,19 @@ There you go, if everything went fine you should be prompted by the Secure Shell
 
 <hr>
 
-16. Let's get back to your installation using your `CLI`. The following steps are not performed in `Secure Shell App`, but you can perform them there.<br>
+14. Let's get back to your installation using your `CLI`. The following steps are not performed in `Secure Shell App`, but you can perform them there.<br>
 
-17. Elevate your priviledges to root using : $ sudo su and perform $ yum update -y to update your `CLI` with the latest available packages.<br>
+15. Elevate your priviledges to root using : $ sudo su and perform $ yum update -y to update your `CLI` with the latest available packages.<br>
 
-18. Install `Apache HTTP Server` from your `CLI`. This will basically turn your `EC2` instance to a web server : use $ cd /var/www/html to make your web server's files accessible by `Port 80`.<br>
+16. Install `Apache HTTP Server` from your `CLI`. This will basically turn your `EC2` instance to a web server : use $ cd /var/www/html to make your web server's files accessible by `Port 80`.<br>
 
 [![isaac-arnault-AWS-13.png](https://i.postimg.cc/4xPRdb2z/isaac-arnault-AWS-13.png)](https://postimg.cc/Snnv18hs)
 
-19. Let's create a sample index.html file using $ nano index.html<br>
+17. Let's create a sample index.html file using $ nano index.html<br>
 
 [![isaac-arnault-AWS-14.png](https://i.postimg.cc/sg8GtsjG/isaac-arnault-AWS-14.png)](https://postimg.cc/nX4Lm8Qn)
 
-20. To start the httpd service, use $ service httpd start.<br>
+18. To start the httpd service, use $ service httpd start.<br>
 
 [![isaac-arnault-AWS-15.png](https://i.postimg.cc/k4NV6SxW/isaac-arnault-AWS-15.png)](https://postimg.cc/xJCjBcpd)
 
