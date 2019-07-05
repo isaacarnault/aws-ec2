@@ -143,8 +143,8 @@ Now, you are connected to your `EC2` instance using `SSH`.<br>
 To start the httpd service, use $ service httpd start.
 
 [![isaac-arnault-AWS-15.png](https://i.postimg.cc/k4NV6SxW/isaac-arnault-AWS-15.png)](https://postimg.cc/xJCjBcpd)
-<hr>
-There you go, type your IPv4 public address in your browser and you should see your web server online.
+
+There you go, type your IPv4 public address in your browser and you should see your web server online.<br>
 
 [![isaac-arnault-AWS.png](https://i.postimg.cc/85xPkBX1/isaac-arnault-AWS.png)](https://postimg.cc/5YqMnvMG)
 
