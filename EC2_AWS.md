@@ -183,4 +183,4 @@ There you go, if everything went fine you should be prompted by the Secure Shell
 
 There you go, type your IPv4 public address in your browser and you should see your web server online.<br>
 
-[url=https://postimg.cc/FdHcGyMC][img]https://i.postimg.cc/FdHcGyMC/isaac_arnault_AWS_11.png[/img][/url]
+[![isaac-arnault-AWS-16.png](https://i.postimg.cc/8cSZMxjs/isaac-arnault-AWS-16.png)](https://postimg.cc/k6TNd1Nd)
