@@ -161,6 +161,8 @@ Go back in your "Secure App Shell" in your `Chrome` browser to upload the two ge
 
 There you go, if everything went fine you should be prompted by the Secure Shell App, type "yes" and you should see the same display as you would normally see in your CLI.
 
+[![isaac-arnault-AWS.png](https://i.postimg.cc/85xPkBX1/isaac-arnault-AWS.png)](https://postimg.cc/5YqMnvMG)
+
 <hr>
 
 14. Let's get back to your installation using your `CLI`. The following steps are not performed in `Secure Shell App`, but you can perform them there.<br>
@@ -181,4 +183,4 @@ There you go, if everything went fine you should be prompted by the Secure Shell
 
 There you go, type your IPv4 public address in your browser and you should see your web server online.<br>
 
-[![isaac-arnault-AWS.png](https://i.postimg.cc/85xPkBX1/isaac-arnault-AWS.png)](https://postimg.cc/5YqMnvMG)
+[url=https://postimg.cc/FdHcGyMC][img]https://i.postimg.cc/FdHcGyMC/isaac_arnault_AWS_11.png[/img][/url]
