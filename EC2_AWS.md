@@ -16,18 +16,22 @@ You can bypass this step and login normally.<br>
 6. Click on "Next: Configure instance details"<br>
 
 7. Configure instance details : leave all fields as they're by default, just Enable termination protection.<br>
+
 [![isaac-arnault-AWS3.png](https://i.postimg.cc/Sx69wHPy/isaac-arnault-AWS3.png)](https://postimg.cc/mPrh9pRq)
 
 8. Click on "Next : Add Storage". Leave default configuration then click on Next: Add Tags. You can leave tags blanks, here I'm using some tags for my own needs.<br>
 
 [![isaac-arnault-AWS4.png](https://i.postimg.cc/TY8qFjPJ/isaac-arnault-AWS4.png)](https://postimg.cc/8sH6r6M7)
+
 9. Click on "Next : Configure Security Group". Click on "Add rule" to allow `Port 80` on `Http.` Ignore the warning and click on "Review and Launch" then "Launch".<br>
+
 [![isaac-arnault-AWS-5.png](https://i.postimg.cc/0QwK037R/isaac-arnault-AWS-5.png)](https://postimg.cc/5YftxsPn)
 
 10. Now you are about to create a key pair to securely `SSH` into your instance. Select "Create a new key pair", name it as you want then "Download Key Pair". This should download a .pem file. Mine is MYKP1.pem.
-14. Create a new folder named "SSH" on your "Desktop", then move the .pem file to the newly created folder.
-15. Change the permissions to .pem file, ie: $ chmod 400 MYKP1.pem.<br>
-16. Connect to your `EC2` instance using your `IPv4 Public IP Address` provided by your `EC2` instance: $ ssh ec2-user@myipv4.public.address -i MYKP1.pem. Then type "yes" when prompted by the `CLI`. See screenshot below if everything worked fine.<br>
+
+11. Create a new folder named "SSH" on your "Desktop", then move the .pem file to the newly created folder.
+12. Change the permissions to .pem file, ie: $ chmod 400 MYKP1.pem.<br>
+13. Connect to your `EC2` instance using your `IPv4 Public IP Address` provided by your `EC2` instance: $ ssh ec2-user@myipv4.public.address -i MYKP1.pem. Then type "yes" when prompted by the `CLI`. See screenshot below if everything worked fine.<br>
 
 Now, you are connected to your `EC2` instance using `SSH`.<br>
 
@@ -62,20 +66,22 @@ Now, you are connected to your `EC2` instance using `SSH`.<br>
   
 <li>Let's get back to your installation using your `CLI`. The following steps are not performed in `Secure Shell App`, but you can perform them there.</li>
 
-17. Elevate your priviledges to root using : $ sudo su and perform $ yum update -y to update your `CLI` with the latest available packages.<br>
+. Elevate your priviledges to root using : $ sudo su and perform $ yum update -y to update your `CLI` with the latest available packages.<br>
 
-18. Install `Apache HTTP Server` from your `CLI`. This will basically turn your `EC2` instance to a web server : use $ cd /var/www/html to make your web server's files accessible by `Port 80`.<br>
+. Install `Apache HTTP Server` from your `CLI`. This will basically turn your `EC2` instance to a web server : use $ cd /var/www/html to make your web server's files accessible by `Port 80`.<br>
 
 [![isaac-arnault-AWS-13.png](https://i.postimg.cc/4xPRdb2z/isaac-arnault-AWS-13.png)](https://postimg.cc/Snnv18hs)
 
-20. Let's create a sample index.html file using $ nano index.html<br>
+. Let's create a sample index.html file using $ nano index.html<br>
 
 [![isaac-arnault-AWS-14.png](https://i.postimg.cc/sg8GtsjG/isaac-arnault-AWS-14.png)](https://postimg.cc/nX4Lm8Qn)
 
 To start the httpd service, use $ service httpd start.
 
 [![isaac-arnault-AWS-15.png](https://i.postimg.cc/k4NV6SxW/isaac-arnault-AWS-15.png)](https://postimg.cc/xJCjBcpd)
+
 <hr>
+
 There you go, type your IPv4 public address in your browser and you should see your web server online.
 
 ### EC2
@@ -147,4 +153,3 @@ To start the httpd service, use $ service httpd start.
 There you go, type your IPv4 public address in your browser and you should see your web server online.<br>
 
 [![isaac-arnault-AWS.png](https://i.postimg.cc/85xPkBX1/isaac-arnault-AWS.png)](https://postimg.cc/5YqMnvMG)
-
