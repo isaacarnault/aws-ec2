@@ -43,7 +43,7 @@ Now, you are connected to your `EC2` instance using `SSH`.<br>
 
 <hr>
 
-<b>Important</b><br>
+## Important
 
 If connection failed, you are probably blocked by a proxy (you are trying to connect from a Public Libraby for example) not allowing your device using `Port 22`, which is the default port used by the `SSH`.<br>
 
