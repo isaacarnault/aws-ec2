@@ -53,19 +53,17 @@ Search for "Secure Shell App" in your Search Engine and Download it as below :<b
 
 [![isaac-arnault-AWS-10.png](https://i.postimg.cc/3rp4VPVd/isaac-arnault-AWS-10.png)](https://postimg.cc/F1rHJn94)
 
-. Once installed, you should have see this. Then click on "Secure Shell App" icon.<br>
+. Once installed, you should see this. Then click on "Secure Shell App" icon.<br>
 
 [![isaac-arnault-AWS-11.png](https://i.postimg.cc/0QpfkZcv/isaac-arnault-AWS-11.png)](https://postimg.cc/FdHcGyMC)
 
-If everything goes well, enter the following (information) into your Secure Shall App: your username (ec2-user) and your hostname (provided by your EC2 instance). Regarding the "Identity section", you will be uploading your "MYKP1.pem" file as well as the same file without the .pem extension.<br>
+If everything goes well, enter the following information into your Secure Shall App: your username (ec2-user) and your hostname (provided by your EC2 instance).<br>
 
 Go in the SSH folder where you stored the .pem file from your CLI and generate a public key from the .pem, using : $ ssh-keygen -y -f MYKP1.pem > MYKP1.pub.<br>
 
-Now you should have 2 files, MYKP1.pem and MYKP1.pub. Rename "MYKP1.pem" to "MYKP1" (remove .pem extension).
+Now you should have 2 files, MYKP1.pem and MYKP1.pub. Duplicate "MYKP1.pem" file and rename the new file to "MYKP1" (remove .pem extension). Regarding the "Identity section", upload both the "MYKP1.pem" file as well as a copy of that file without the .pem extension (MYKP1).
 
   [![isaac-arnault-AWS-12.png](https://i.postimg.cc/D0YMqShw/isaac-arnault-AWS-12.png)](https://postimg.cc/8fM4GPs2)
-  
-Go back in your "Secure App Shell" in your `Chrome` browser to upload the two generated files. Select the two files and import them. Then click "[ENTER] Connect".<br>
 
 There you go, if everything went fine you should be prompted by the Secure Shell App, type "yes" and you should see the same display as you would normally see in your CLI.<br>
 
@@ -75,7 +73,7 @@ There you go, if everything went fine you should be prompted by the Secure Shell
 
 14. Let's get back to your installation using your `CLI`. The following steps are not performed in `Secure Shell App`, but you can perform them there.<br>
 
-15. Elevate your priviledges to root using : $ sudo su and perform $ yum update -y to update your `CLI` with the latest available packages.<br>
+15. Elevate your privileges to root using : $ sudo su and perform $ yum update -y to update your `CLI` with the latest available packages.<br>
 
 16. Install `Apache HTTP Server` from your `CLI`. This will basically turn your `EC2` instance to a web server : use $ cd /var/www/html to make your web server's files accessible by `Port 80`.<br>
 
