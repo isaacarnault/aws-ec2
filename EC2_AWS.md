@@ -44,7 +44,8 @@ You can bypass this step and login normally.<br>
 </p>
 </details>
 
-- Click on "Next : Add Storage". Leave default configuration then click on Next: Add Tags. You can leave tags blanks, here I'm using some tags for my own needs.<br>
+<b>Next : Add Storage</b><br>
+eave default configuration then click on Next: Add Tags. You can leave tags blanks, here I'm using some tags for my own needs.<br>
 
 <details>
 <summary>🔴 See output</summary>
@@ -55,7 +56,9 @@ You can bypass this step and login normally.<br>
 </p>
 </details>
 
-- Click on "Next : Configure Security Group". Click on "Add rule" to allow `Port 80` on `Http.` Ignore the warning and click on "Review and Launch" then "Launch".
+<b>Next : Configure Security Group</b><br>
+
+Click on "Add rule" to allow `Port 80` on `Http.` Ignore the warning and click on "Review and Launch" then "Launch".
 
 <details>
 <summary>🔴 See output</summary>
@@ -66,13 +69,13 @@ You can bypass this step and login normally.<br>
 </p>
 </details>
 
-- Now you are about to create a key pair to securely `SSH` into your instance. Select "Create a new key pair", name it as you want then "Download Key Pair". This should download a .pem file. Mine is MYKP1.pem.
+- Now you are about to create a key pair to securely `SSH` into your instance. Select `Create a new key pair`, name it as you want then `Download Key Pair`. This should download a .pem file. Mine is MYKP1.pem.
 
 - Create a new folder named "SSH" on your "Desktop", then move the .pem file to the newly created folder.
 
-- Change the permissions to .pem file, ie: $ chmod 400 MYKP1.pem.<br>
+- Change the permissions to .pem file, ie: `$ chmod 400 MYKP1.pem`.<br>
 
-- Connect to your `EC2` instance using your `IPv4 Public IP Address` provided by your `EC2` instance: $ ssh ec2-user@myipv4.public.address -i MYKP1.pem. Then type "yes" when prompted by the `CLI`. See screenshot below if everything worked fine.<br>
+- Connect to your `EC2` instance using your `IPv4 Public IP Address` provided by your `EC2` instance: `$ ssh ec2-user@myipv4.public.address -i MYKP1.pem`. Then type "yes" when prompted by the `CLI`. See screenshot below if everything worked fine.<br>
 
 Now, you should be connected to your `EC2` instance through `SSH`.<br>
 
@@ -119,11 +122,11 @@ Search for "Secure Shell App" in your Search Engine and Download it as below :<b
 </p>
 </details>
 
-- If everything goes well, enter the following information into your Secure Shall App: your username (ec2-user) and your hostname (provided by your EC2 instance).<br>
+- If everything goes well, enter the following information into your `Secure Shall App` as follows : your username (ec2-user) and your hostname (provided by your EC2 instance).<br>
 
-Go in the SSH folder where you stored the .pem file from your CLI and generate a public key from the .pem, using : $ ssh-keygen -y -f MYKP1.pem > MYKP1.pub.<br>
+Go in the `SSH` folder where you stored the .pem file from your `CLI` and generate a public key from the .pem using `$ ssh-keygen -y -f MYKP1.pem > MYKP1.pub`.<br>
 
-- Now you should have 2 files, MYKP1.pem and MYKP1.pub. Duplicate "MYKP1.pem" file and rename the new file to "MYKP1" (remove .pem extension). Regarding the "Identity section", upload both the "MYKP1.pem" file as well as a copy of that file without the .pem extension (MYKP1).
+- Now you should have 2 files, `MYKP1.pem` and `MYKP1.pub`. Duplicate `MYKP1.pem` file and rename the new file to `MYKP1` (just remove .pem extension). In the `Identity section` of the prompt, upload both the `MYKP1.pem` and `MYKP1` file .
 
 <details>
 <summary>🔴 See output</summary>
@@ -134,7 +137,7 @@ Go in the SSH folder where you stored the .pem file from your CLI and generate a
 </p>
 </details>  
 
-- There you go, if everything went fine you should be prompted by the Secure Shell App, type "yes" and you should see the same display as you would normally see in your CLI.<br>
+- There you go, if everything went fine you should be prompted by the `Secure Shell App`, type "yes" and you should see the same display as you would normally see in your `CLI`.<br>
 
 <details>
 <summary>🔴 See output</summary>
@@ -149,9 +152,9 @@ Go in the SSH folder where you stored the .pem file from your CLI and generate a
 
 - Let's get back to your installation using your `CLI`. The following steps are not performed in `Secure Shell App`, but you can perform them there.<br>
 
-- Elevate your privileges to root using : $ sudo su and perform $ yum update -y to update your `CLI` with the latest available packages.<br>
+- Elevate your privileges to root using `$ sudo su` and perform `$ yum update -y` to update your `CLI` with the latest available packages.<br>
 
-- Install `Apache HTTP Server` from your `CLI`. This will basically turn your `EC2` instance to a web server : use $ cd /var/www/html to make your web server's files accessible by `Port 80`.<br>
+- Install `Apache HTTP Server` from your `CLI`. This will basically turn your `EC2` instance to a web server, use `$ cd /var/www/html` to make your web server's files accessible by `Port 80`.<br>
 
 <details>
 <summary>🔴 See output</summary>
@@ -162,7 +165,7 @@ Go in the SSH folder where you stored the .pem file from your CLI and generate a
 </p>
 </details>
 
-- Let's create a sample index.html file using $ nano index.html<br>
+- Let's create a sample `index.html` file using `$ nano index.html`<br>
 
 <details>
 <summary>🔴 See output</summary>
@@ -173,7 +176,7 @@ Go in the SSH folder where you stored the .pem file from your CLI and generate a
 </p>
 </details>
 
-- To start the httpd service, use $ service httpd start.<br>
+- To start the `httpd` service, use `$ service httpd start`.<br>
 
 <details>
 <summary>🔴 See output</summary>
@@ -184,7 +187,7 @@ Go in the SSH folder where you stored the .pem file from your CLI and generate a
 </p>
 </details>
 
-- There you go, type your IPv4 public address in your browser and you should see your web server online.<br>
+- There you go, type your `IPv4 public address` in your browser and you should see your `Web Server` online.<br>
 
 <details>
 <summary>🔴 See output</summary>
