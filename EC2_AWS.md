@@ -75,7 +75,11 @@ Click on "Add rule" to allow `Port 80` on `Http.` Ignore the warning and click o
 
 - Change the permissions to .pem file, ie: `$ chmod 400 MYKP1.pem`.<br>
 
-- Connect to your `EC2` instance using your `IPv4 Public IP Address` provided by your `EC2` instance: `$ ssh ec2-user@myipv4.public.address -i MYKP1.pem`. Then type "yes" when prompted by the `CLI`. See screenshot below if everything worked fine.<br>
+- Connect to your `EC2` instance using your `IPv4 Public IP Address`:<br>
+
+`$ ssh ec2-user@myipv4.public.address -i MYKP1.pem`<br>
+
+- Then type "yes" when prompted by the `CLI`.<br>
 
 Now, you should be connected to your `EC2` instance through `SSH`.<br>
 
