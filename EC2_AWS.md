@@ -14,9 +14,9 @@ You can bypass this step and login normally.<br>
 </p>
 </details>
 
-- Go to Services > EC2<br>
+<b>Go to Services > EC2</b><br>
 
-- In "Create Instance" section, click on "Launch Instance"<br>
+- In `Create Instance` section, click on `Launch Instance`<br>
 
 <details>
 <summary>🔴 See output</summary>
@@ -45,7 +45,12 @@ You can bypass this step and login normally.<br>
 </details>
 
 <b>Next : Add Storage</b><br>
-eave default configuration then click on Next: Add Tags. You can leave tags blanks, here I'm using some tags for my own needs.<br>
+
+Leave default configuration.<br>
+
+<b>Next: Add Tags</b><br>
+
+You can leave tags blanks, here I'm using some tags for my own needs.<br>
 
 <details>
 <summary>🔴 See output</summary>
