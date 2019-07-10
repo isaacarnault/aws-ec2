@@ -191,7 +191,7 @@ Go in the `SSH` folder where you stored the .pem file from your `CLI` and genera
 <summary>🔴 See output</summary>
 <p>
 
-[![isaac-arnault-AWS-14.png](https://i.postimg.cc/sg8GtsjG/isaac-arnault-AWS-14.png)](https://postimg.cc/nX4Lm8Qn)
+[![isaac-arnault-AWS-32.png](https://i.postimg.cc/4d8KxCJH/isaac-arnault-AWS-32.png)](https://postimg.cc/jw7qMFnR)
 
 </p>
 </details>
@@ -202,7 +202,7 @@ Go in the `SSH` folder where you stored the .pem file from your `CLI` and genera
 <summary>🔴 See output</summary>
 <p>
   
-[![isaac-arnault-AWS-32.png](https://i.postimg.cc/4d8KxCJH/isaac-arnault-AWS-32.png)](https://postimg.cc/jw7qMFnR)
+[![isaac-arnault-AWS-16.png](https://i.postimg.cc/8cSZMxjs/isaac-arnault-AWS-16.png)](https://postimg.cc/k6TNd1Nd)
 
 </p>
 </details>
