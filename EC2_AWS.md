@@ -165,15 +165,6 @@ Go in the `SSH` folder where you stored the .pem file from your `CLI` and genera
 
 - Install `Apache HTTP Server` from your `CLI`. This will basically turn your `EC2` instance to a web server, use `$ cd /var/www/html` to make your web server's files accessible by `Port 80`.<br>
 
-<details>
-<summary>🔴 See output</summary>
-<p>
-
-[![isaac-arnault-AWS-13.png](https://i.postimg.cc/4xPRdb2z/isaac-arnault-AWS-13.png)](https://postimg.cc/Snnv18hs)
-
-</p>
-</details>
-
 - Let's create a sample `index.html` file using `$ nano index.html`<br>
 
 <details>
